@@ -6,7 +6,7 @@ const List = ({ listData, deleteData }) => {
     <div className="list">
       {listData.map((i) => {
           const { id,firstName, lastName,email} = i;
-          console.log(id);
+          // console.log(id);
           return(
               <Item key={id} firstName={firstName} lastName={lastName} email={email} id={id} deleteData={deleteData} />
           )
